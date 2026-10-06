@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LA SUPER TRADITIONNELLE – SPÉCIAL 5 ANS. Grande plateforme culturelle de la préfecture de la Binah, du 1er au 5 décembre 2026.">
+  <title>LA SUPER TRADITIONNELLE – SPÉCIAL 5 ANS</title>
+  <style>
+    :root{
+      --primary:#7b1e1e;
+      --secondary:#c99a3b;
+      --dark:#1d1712;
+      --light:#fffaf3;
+      --muted:#6f6258;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--dark);
+      background:var(--light);
+      line-height:1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:20;
+      background:rgba(255,250,243,.96);
+      border-bottom:1px solid #eadfce;
+      backdrop-filter:blur(8px);
+    }
+    nav{
+      min-height:70px;display:flex;align-items:center;justify-content:space-between;
+      gap:24px;
+    }
+    .brand{font-weight:800;letter-spacing:.5px;color:var(--primary)}
+    .brand small{display:block;color:var(--muted);font-size:.72rem;letter-spacing:1.5px}
+    .navlinks{display:flex;gap:20px;flex-wrap:wrap;font-size:.92rem}
+    .navlinks a:hover{color:var(--primary)}
+    .hero{
+      background:
+        linear-gradient(135deg,rgba(58,25,15,.88),rgba(123,30,30,.82)),
+        radial-gradient(circle at 80% 20%,rgba(201,154,59,.35),transparent 35%);
+      color:white;
+      padding:100px 0 90px;
+    }
+    .hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}
+    .eyebrow{font-size:.85rem;letter-spacing:2px;text-transform:uppercase;color:#f2d79a;font-weight:700}
+    h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.02;margin:14px 0 18px}
+    .hero p{font-size:1.15rem;max-width:700px;color:#f8eee3}
+    .date-box{
+      border:1px solid rgba(255,255,255,.35);
+      padding:28px;border-radius:18px;background:rgba(255,255,255,.08);
+    }
+    .date-box strong{display:block;font-size:1.8rem;color:#f2d79a}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{
+      display:inline-block;padding:13px 20px;border-radius:999px;font-weight:700;
+      border:1px solid transparent;
+    }
+    .btn-primary{background:var(--secondary);color:#24180c}
+    .btn-outline{border-color:rgba(255,255,255,.6);color:white}
+    section{padding:75px 0}
+    .section-head{max-width:760px;margin-bottom:36px}
+    .section-head h2{font-size:2.1rem;margin:0 0 10px;color:var(--primary)}
+    .section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{
+      background:white;border:1px solid #eadfce;border-radius:16px;padding:25px;
+      box-shadow:0 8px 24px rgba(46,29,16,.05);
+    }
+    .card h3{margin-top:0;color:var(--primary)}
+    .highlight{
+      background:#f1e5d3;
+      border-top:1px solid #e3cfad;border-bottom:1px solid #e3cfad;
+    }
+    .cantons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .canton{background:white;border:1px solid #eadfce;padding:14px 16px;border-radius:10px;font-weight:700}
+    .program{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .program-item{display:flex;gap:18px;background:white;border-left:4px solid var(--secondary);padding:18px;border-radius:10px}
+    .program-item strong{min-width:130px;color:var(--primary)}
+    .sponsor{
+      background:var(--dark);color:white;border-radius:20px;padding:40px;
+    }
+    .sponsor h2{margin-top:0;color:#f2d79a}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    footer{background:#120e0b;color:#d9cfc5;padding:35px 0}
+    footer strong{color:white}
+    .tiny{font-size:.88rem;color:#8f8277}
+    @media(max-width:800px){
+      .hero-grid,.contact,.program{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .cantons{grid-template-columns:1fr 1fr}
+      .navlinks{display:none}
+      .hero{padding:75px 0}
+    }
+    @media(max-width:480px){
+      .cantons{grid-template-columns:1fr}
+      section{padding:55px 0}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#accueil">
+        LA SUPER TRADITIONNELLE
+        <small>ÉDITION 05 · SPÉCIAL 5 ANS</small>
+      </a>
+      <div class="navlinks">
+        <a href="#concept">Le concept</a>
+        <a href="#programme">Programme</a>
+        <a href="#solidarite">Actions sociales</a>
+        <a href="#partenaires">Partenaires</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Une grande plateforme culturelle</div>
+        <h1>LA SUPER TRADITIONNELLE<br>SPÉCIAL 5 ANS</h1>
+        <p>
+          Une célébration de la culture, des traditions, des talents et du savoir-faire
+          de la préfecture de la Binah, de la scène à la foire.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#partenaires">Devenir partenaire</a>
+          <a class="btn btn-outline" href="#programme">Découvrir l'événement</a>
+        </div>
+      </div>
+      <div class="date-box">
+        <span>RENDEZ-VOUS</span>
+        <strong>1er – 5 décembre 2026</strong>
+        <p>📍 Préfecture de la Binah, Togo</p>
+        <p>Organisé en prélude à <strong>SINKARING</strong>, fête traditionnelle de la préfecture de la Binah.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="concept">
+    <div class="container">
+      <div class="section-head">
+        <h2>Le concept</h2>
+        <p>
+          LA SUPER TRADITIONNELLE est une plateforme culturelle dédiée à la valorisation
+          des traditions, du patrimoine, des talents et du savoir-faire de la Binah.
+          Pour sa 5ᵉ édition, l'événement prend une nouvelle dimension avec une programmation
+          allant de la scène à la foire.
+        </p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Foire culturelle</h3>
+          <p>Un espace d'exposition pour les artisans, producteurs, transformateurs, entrepreneurs et acteurs locaux.</p>
+        </article>
+        <article class="card">
+          <h3>Scène culturelle</h3>
+          <p>Animations, prestations artistiques, défilé de mode traditionnel et grande soirée culturelle.</p>
+        </article>
+        <article class="card">
+          <h3>Communautés</h3>
+          <p>Un rendez-vous de rassemblement et de retrouvailles autour de l'identité et du patrimoine de la Binah.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight" id="programme">
+    <div class="container">
+      <div class="section-head">
+        <h2>Temps forts</h2>
+        <p>Une programmation conçue pour réunir culture, exposition, divertissement et engagement communautaire.</p>
+      </div>
+      <div class="program">
+        <div class="program-item"><strong>Foire</strong><span>Exposition culturelle, artisanale et commerciale.</span></div>
+        <div class="program-item"><strong>Culture</strong><span>Animations et expressions culturelles des communautés.</span></div>
+        <div class="program-item"><strong>Mode</strong><span>Défilé mettant à l'honneur la mode et les créations traditionnelles.</span></div>
+        <div class="program-item"><strong>Grande soirée</strong><span>Un grand rendez-vous artistique et culturel avec les partenaires.</span></div>
+        <div class="program-item"><strong>Sport & communauté</strong><span>Activités favorisant la mobilisation et la cohésion.</span></div>
+        <div class="program-item"><strong>Communication</strong><span>Dispositif digital, réseaux sociaux, radio/TV, presse et affichage.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Les neuf cantons de la Binah</h2>
+        <p>Un événement qui met en lumière la diversité culturelle et les communautés de la préfecture.</p>
+      </div>
+      <div class="cantons">
+        <div class="canton">Solla</div>
+        <div class="canton">Boufalé</div>
+        <div class="canton">Pessaré</div>
+        <div class="canton">Pagouda</div>
+        <div class="canton">Lama Dessi</div>
+        <div class="canton">Pitikita</div>
+        <div class="canton">Kétao</div>
+        <div class="canton">Kemerida</div>
+        <div class="canton">Sirka</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight" id="solidarite">
+    <div class="container">
+      <div class="section-head">
+        <h2>Une édition placée sous le signe de la solidarité</h2>
+        <p>La fête culturelle s'accompagne d'actions en faveur des personnes vulnérables et de la communauté.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Don de sang</h3><p>Une action citoyenne destinée à contribuer aux besoins de la communauté.</p></article>
+        <article class="card"><h3>Visite aux malades</h3><p>Des visites et gestes de solidarité en direction des personnes hospitalisées.</p></article>
+        <article class="card"><h3>Orphelinat</h3><p>Une action de proximité en faveur des enfants et des personnes en situation de vulnérabilité.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="partenaires">
+    <div class="container">
+      <div class="sponsor">
+        <h2>Devenir partenaire</h2>
+        <p>
+          La 5ᵉ édition offre aux entreprises et institutions plusieurs possibilités
+          d'association à l'événement : visibilité sur les supports de communication,
+          présence sur le site de l'événement, diffusion de contenus audiovisuels,
+          activation de proximité et autres contreparties selon la formule choisie.
+        </p>
+        <p>
+          Notre dossier de présentation détaille les différentes formules de sponsoring
+          et les possibilités de collaboration.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="mailto:supertraditionnellebinah@gmail.com?subject=Demande%20de%20partenariat%20%E2%80%93%20La%20Super%20Traditionnelle">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <div>
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Pour toute information, partenariat, sponsoring ou participation à la foire.</p>
+        </div>
+        <p><strong>Téléphone :</strong><br>
+          +228 71 62 54 40<br>
+          +228 93 44 25 51<br>
+          +228 92 74 70 34
+        </p>
+        <p><strong>E-mail :</strong><br>
+          <a href="mailto:supertraditionnellebinah@gmail.com">supertraditionnellebinah@gmail.com</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Suivez l'événement</h3>
+        <p><strong>TikTok & Facebook :</strong><br>SUPER TRADITIONELLE BINAH</p>
+        <p class="tiny">Les informations pratiques et les actualités de l'édition seront publiées progressivement sur nos canaux officiels.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>LA SUPER TRADITIONNELLE – ÉDITION 05, SPÉCIAL 5 ANS</strong>
+    <p class="tiny">Préfecture de la Binah · Togo · 1er au 5 décembre 2026</p>
+    <p class="tiny">© 2026 Comité d'Organisation de LA SUPER TRADITIONNELLE (COST). Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
+</html>
